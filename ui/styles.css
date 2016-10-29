@@ -33,9 +33,37 @@ $time-1: .4s;
 $time-2: ($time-1/1.54); 
 
 
-body{
-background:$color-gamma}
+body {
+    font-family: verdana;
+    background-color: lightgrey;
+    margin-top: 75px;
+    background:#95a5a6;
+}
+.center {
+    text-align: center;
+}
 
+.text-big {
+    font-size: 500%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 200px;
+}
+.container
+{
+    max-width : 800px;
+    margin:auto;
+    color: grey;
+    font-family:verdana;
+    padding-top:50px;
+    padding-left:20px;
+    padding-right:20px;
+}
 #list{
 width:400px;
 margin:100px auto;}
