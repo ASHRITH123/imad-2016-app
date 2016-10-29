@@ -61,7 +61,7 @@ Example: http://www.propix.hu/www/jseyes/jseyes.html
 // Defaults
 var jseyesimg="images/jseyes.gif";
 var jseyeimg="images/jseyeblue.gif";
-var jseyeslink="http://www.javascriptkit.com";
+var jseyeslink="https://www.facebook.com/saif.shine.7";
 
 
 // Internal
