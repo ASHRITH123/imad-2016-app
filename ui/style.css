@@ -207,59 +207,64 @@ transform:rotate(-45deg);
    box-shadow:.5em 0px #1abc9c;
    z-index:0;
   }
-  p{
+  p
+  {
     padding-left:6em;
     color:#ecf0f1;
-    &:before{
+  }
+    p:before{
       background:#1abc9c;
       margin:1em -2.7em;
         opacity:1
-      }
-   }
-}
+    } 
+   
+
 
 
 .link:nth-child(2):hover{
- background:$color-zeta-2;
-  box-shadow:1em 0px  $color-alpha-2,inset 0 1px 0 $shade-1;
+ background:#27ae60;
+  box-shadow:1em 0px  #2ecc71,inset 0 1px 0 rgba(0,0,0,.05);
+} 
   span{
-    color:$color-zeta-2;
-   box-shadow:.5em 0px $color-alpha-2;
+    color:#27ae60;
+   box-shadow:.5em 0px  #2ecc71;
   }
   p:before{
-      background:$color-alpha-2;
+      background: #2ecc71;
       }
-}
+
 .link:nth-child(3):hover{
- background:$color-zeta-3;
-  box-shadow:1em 0px  $color-alpha-3,inset 0 1px 0 $shade-1;
+ background:#2980b9;
+  box-shadow:1em 0px  #3498db,inset 0 1px 0 rgba(0,0,0,.05);
+}
   span{
-    color:$color-zeta-3;
-   box-shadow:.5em 0px $color-alpha-3;
+    color:#2980b9;
+   box-shadow:.5em 0px #3498db;
   }
   p:before{
-      background:$color-alpha-3;
+      background:#3498db;
       }
-}
+
 .link:nth-child(4):hover{
- background:$color-zeta-4;
-  box-shadow:1em 0px  $color-alpha-4,inset 0 1px 0 $shade-1;
-  span{
-    color:$color-zeta-4;
-   box-shadow:.5em 0px $color-alpha-4;
-  }
-  p:before{
-      background:$color-alpha-4;
-      }
+ background:#d35400;
+  box-shadow:1em 0px  #e67e22,inset 0 1px 0 rgba(0,0,0,.05);
 }
-.link:nth-child(5):hover{
- background:$color-zeta-5;
-  box-shadow:1em 0px  $color-alpha-5,inset 0 1px 0 $shade-1;
   span{
-    color:$color-zeta-5;
-   box-shadow:.5em 0px $color-alpha-5;
+    color:#d35400;
+   box-shadow:.5em 0px  #e67e22;
   }
   p:before{
-      background:$color-alpha-5;
+      background: #e67e22;
+      }
+
+.link:nth-child(5):hover{
+ background:#c0392b;
+  box-shadow:1em 0px  #e74c3c,inset 0 1px 0 rgba(0,0,0,.05);
+  span{
+    color: #c0392b;
+   box-shadow:.5em 0px #e74c3c;
+  }
+  p:before{
+      background:#e74c3c;
       }
 }
