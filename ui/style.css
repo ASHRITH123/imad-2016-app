@@ -148,10 +148,10 @@ margin:100px auto;}
   background:#34495e;
   width:400px;
   height:60px;
-  box-shadow:1em 0px  #2c3e50,inset 0 1px 0 $shade-1;
+  box-shadow:1em 0px  #2c3e50,inset 0 1px 0 rgba(0,0,0,.05);
   cursor:pointer;
   display:block ;
-  transition:box-shadow $time-1 ease,padding $time-2 ease;
+  transition:box-shadow .4s ease,padding .4s/1.54 ease;
 }
 .link span{
   display:block;
@@ -166,9 +166,9 @@ margin:100px auto;}
   color:#34495e;
   position:relative;
   z-index:2;
-  box-shadow:.5em 0px  #2c3e50,inset 0 1px 0 $shade-1;
+  box-shadow:.5em 0px  #2c3e50,inset 0 1px 0 rgba(0,0,0,.05);
   transform:rotate(0deg);
-  transition:z-index 0s ease $time-2;
+  transition:z-index 0s ease .4s/1.54;
 }
 .link p:before{
   content:'';
@@ -191,26 +191,27 @@ transform:rotate(-45deg);
   padding-top:0;
   margin:0;
   line-height:2.7;
-  color:$color-beta;
+  color:#eee;
   font-family:helvetica;
-  transition: $time-1 ease;
+  transition: .4s ease;
 }
 
 .link:hover{
- background:$color-zeta;
-  box-shadow:1em 0px  $color-alpha,inset 0 1px 0 $shade-1;
+ background:#16a085;
+  box-shadow:1em 0px  #1abc9c,inset 0 1px 0 rgba(0,0,0,.05);
   padding-right:1em;
-  span{
-    color:$color-zeta;
-   box-shadow:.5em 0px $color-alpha;
-    z-index:0;
+}
+  span 
+  {
+   color: #16a085;
+   box-shadow:.5em 0px #1abc9c;
+   z-index:0;
   }
   p{
     padding-left:6em;
-    
     color:#ecf0f1;
     &:before{
-      background:$color-alpha;
+      background:#1abc9c;
       margin:1em -2.7em;
         opacity:1
       }
