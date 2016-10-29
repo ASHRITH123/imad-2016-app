@@ -260,6 +260,7 @@ transform:rotate(-45deg);
 .link:nth-child(5):hover{
  background:#c0392b;
   box-shadow:1em 0px  #e74c3c,inset 0 1px 0 rgba(0,0,0,.05);
+}
   span{
     color: #c0392b;
    box-shadow:.5em 0px #e74c3c;
@@ -267,4 +268,3 @@ transform:rotate(-45deg);
   p:before{
       background:#e74c3c;
       }
-}
