@@ -131,6 +131,9 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/js/jseyes.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'jseyes.js'));
 });
+app.get('/js/client.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', 'client.js'));
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
@@ -140,6 +143,26 @@ app.get('/images/jseyeblue.gif', function (req, res) {
 app.get('/images/jseyes.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'images', 'jseyes.gif'));
 });
+app.get("/", function (request, response) {
+  response.sendFile(__dirname + '/views/index.html');
+});
+
+app.get("/dreams", function (request, response) {
+  response.send(dreams);
+});
+
+// could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
+app.post("/dreams", function (request, response) {
+  dreams.push(request.query.dream);
+  response.sendStatus(200);
+});
+
+// Simple in-memory store for now
+var dreams = [
+  "Find and count some sheep",
+  "Climb a really tall mountain",
+  "Wash the dishes"
+  ];
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
