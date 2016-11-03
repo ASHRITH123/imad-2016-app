@@ -186,3 +186,8 @@ transform:rotate(-45deg);
       background:$color-alpha-5;
       }
 }
+
+script{
+    
+    left: 600px;
+}
