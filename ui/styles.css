@@ -34,6 +34,7 @@ $time-2: ($time-1/1.54);
 
 
 body {
+    left: 350px;
     font-family: verdana;
     background-color: lightgrey;
     margin-top: 750px;
