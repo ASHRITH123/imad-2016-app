@@ -190,3 +190,7 @@ transform:rotate(-45deg);
       }
 }
 
+#title{
+    background-color: red;
+    font-family: Century Gothic, sans-serif;
+}
